@@ -27,7 +27,7 @@
   font-weight: bold;
 }
 
-/* Адаптив */
+
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;

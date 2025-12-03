@@ -1,0 +1,125 @@
+.pokemons-cards-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.pokemon-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 250px;
+  height: 400px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.pokemon-icon {
+  width: 100px;
+  height: 100px;
+  margin: 10px 0;
+}
+
+.stats {
+  margin-top: 10px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.stat-bar {
+  background-color: #ddd;
+  flex-grow: 1;
+  height: 14px;
+  margin-left: 5px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.stat-value {
+  background-color: #4CAF50;
+  height: 100%;
+  text-align: right;
+  color: white;
+  font-size: 10px;
+  line-height: 14px;
+  padding-right: 2px;
+  transition: width 0.3s ease;
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #FFCB05;
+  -webkit-text-stroke: 3px #2A75BB;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 30px 0 10px 0;
+  text-shadow: 3px 3px 0 #2A75BB, 6px 6px 0 rgba(0, 0, 0, 0.2);
+  font-family: 'Fredoka One', sans-serif;
+}
+
+@media (max-width: 500px) {
+  .pokemons-cards-block {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .pokemon-card {
+    width: 100%;
+    max-width: 250px;
+    height: auto; 
+  }
+}
+
+@media (max-width: 768px) {
+  .pokemon-card {
+    width: 90%;
+    height: auto;
+  }
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: #FFCB05;
+  text-shadow: 2px 2px 0 #2A75BB, 4px 4px 0 rgba(0, 0, 0, 0.2);
+  margin: 50px 0;
+  text-align: center;
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}

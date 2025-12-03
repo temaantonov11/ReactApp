@@ -15,14 +15,25 @@ html, body {
   transition: background 0.3s, color 0.3s;
 }
 
-h1 {
-  margin-top: 20px; 
-  margin-left: 10px; 
-  font-size: 2rem;
-  color: #fff; 
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center; 
+  padding: 20px;
 }
 
+#root > * {
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+}
 
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -38,23 +49,15 @@ h1 {
   }
 }
 
-#root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column; 
-  justify-content: flex-start; 
-  align-items: center; 
-  padding: 20px;
-}
-
-
-#root > * {
-  opacity: 0;
-  animation: fadeIn 0.6s ease forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+h1.page-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #FFCB05;
+  -webkit-text-stroke: 3px #2A75BB;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 30px 0 10px 0;
+  text-shadow: 3px 3px 0 #2A75BB, 6px 6px 0 rgba(0, 0, 0, 0.2);
+  font-family: 'Fredoka One', sans-serif;
 }
