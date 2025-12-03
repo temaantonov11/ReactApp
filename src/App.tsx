@@ -3,7 +3,7 @@ import Pokemons from './pages/pokemons';
 import Movie from './pages/movie';
 import Money from './pages/money';
 import Weather from './pages/weather';
-import Navbar from './components/Navbar';
+import Navbar from './components/NavBar/Navbar';
 
 function App() {
 
