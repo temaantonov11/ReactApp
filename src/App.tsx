@@ -1,21 +1,15 @@
-import { Link, Route, Routes } from 'react-router-dom'
-import Pokemons from './pages/pokemons'
-import Movie from './pages/movie'
-import Money from './pages/money'
-import Weather from './pages/weather'
+import { Route, Routes } from 'react-router-dom';
+import Pokemons from './pages/pokemons';
+import Movie from './pages/movie';
+import Money from './pages/money';
+import Weather from './pages/weather';
+import Navbar from './components/Navbar';
 
 function App() {
 
   return (
     <>
-      <nav style={{display: "flex", gap: 20}}>
-        <Link to="/"> Pokemons </Link>
-        <Link to="/movie"> Movie </Link>
-        <Link to="/money"> Money </Link>
-        <Link to="/weather"> Weather </Link>
-      </nav>
-
-      <hr />
+      <Navbar />
 
       <Routes>
         <Route path="/" element={<Pokemons />} />

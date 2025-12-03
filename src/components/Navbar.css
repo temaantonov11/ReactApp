@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+  background: #222;
+}
+
+.navbar-container {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 16px;
+}
+
+.nav-item:hover {
+  color: #fff;
+}
+
+.nav-item.active {
+  color: #4cc9f0;
+  font-weight: bold;
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
