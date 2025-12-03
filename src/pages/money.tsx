@@ -1,8 +1,9 @@
+import { CryptoPrice } from "../components/CryptoPrice/CryptoPrice"
 
 export default function Money() {
     return(
         <div>
-            <h1> Money </h1>
+            <CryptoPrice />
         </div>
     )
 }

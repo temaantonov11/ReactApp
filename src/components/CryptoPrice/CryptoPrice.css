@@ -1,0 +1,67 @@
+.crypto-price-container {
+  max-width: 450px;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #1f1f1f, #2c2c2c);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  transition: background 0.3s;
+}
+
+.crypto-price-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.crypto-price-container select {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.1rem;
+  background-color: #3c3c3c;
+  color: #fff;
+  outline: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.crypto-price-container select:hover {
+  background-color: #505050;
+  transform: scale(1.02);
+}
+
+.crypto-price-container .price-result {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.crypto-price-container .loading {
+  margin: 25px 0;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .crypto-price-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .crypto-price-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .crypto-price-container select {
+    font-size: 1rem;
+  }
+
+  .crypto-price-container .price-result {
+    font-size: 1.1rem;
+  }
+}

@@ -7,7 +7,7 @@ export default function Navbar() {
             <div className='navbar-container'>
                 <NavLink to="/" className="nav-item"> Pokemons </NavLink>
                 <NavLink to="/movie" className="nav-item"> Movie </NavLink>
-                <NavLink to="/money" className="nav-item"> Money </NavLink>
+                <NavLink to="/money" className="nav-item"> Crypto </NavLink>
                 <NavLink to="/weather" className="nav-item"> Weather </NavLink>
             </div>
         </nav>
